@@ -1,8 +1,8 @@
 ---
-title: 'ODINN.jl: Scientific machine learning glacier modelling'
+title: "ODINN.jl: Scientific machine learning glacier modelling"
 tags:
   - Julia
-  - *glaciers*
+  - glaciers
   - climate
   - SciML
   - hydrology
@@ -55,6 +55,8 @@ bibliography: paper.bib
 
 The ODINN ecosystem extends beyond this suite of Julia packages, by leveraging the data preprocessing tools of the Open Global Glacier Model ([@fmaussion:2019], OGGM). We do so via an auxiliary library named `Gungnir`, which is responsible for downloading all the necessary data to force and initialize the model, such as glacier outlines from the Randolph Glacier Inventory (RGI), digital elevation models (DEMs), ice thickness observations from GlaThiDa, ice surface velocities from different studies and many different sources of climate reanalyses and projections. This implies that `ODINN.jl`, like OGGM, is virtually capable of simulating any of the 200,000 glaciers on Earth. 
 
+![Figure 1: Overview of the ODINN.jl ecosystem. \label{fig:ecosystem}](figures/odinn_ecosystem_v2.png)
+
 `ODINN.jl` provides a high-level user-friendly interface, enabling the user to swap and replace most elements of a glacier simulation in a very modular fashion. The main elements of a simulation, such as the `Parameters`, a `Model` and a `Simulation`, are all objects that can be easily modified and combined. In a few lines of code, the user can automatically retrieve all necessary information for most glaciers on Earth, compose a `Model` based on a specific combination of surface mass balance and ice flow models, and incorporate data-driven models (e.g. a neural network) to parametrize specific physical processes of any of these components. Both forward and reverse simulations run in parallel using multiprocessing, leveraging Julia's speed and performance. 
 
 The most unique aspect of `ODINN.jl` is its differentiability and capabilities of performing all sorts of different hybrid modelling. Since the whole ecosystem is differentiable, we can optimize almost any model component, providing an extremely powerful framework to tackle many scientific problems. `ODINN.jl` can optimize, separately or together, in a steady-state or transient way:
@@ -63,8 +65,10 @@ The most unique aspect of `ODINN.jl` is its differentiability and capabilities o
 - Model parameters (e.g. the ice viscosity `A` in a 2D Shallow Ice Approximation), in a gridded or scalar format. This can be done for multiple time steps where observations (e.g. ice surface velocities) are available.
 - The parameters of a regressor (e.g. a neural network), used to parametrize a subpart or one or more parameters of an ice flow or surface mass balance model. This enables the exploration of empirical laws describing physical processes of glaciers. 
 
+For this, it is necessary to use reverse differentation to compute the required vector-jacobian products (VJPs). We have two strategies to achieve this: (1) manual adjoints, which have been implemented using AD via `Enzyme.jl`, as well as fully manual implementations of the discrete and continuous adjoints; and (2) automatic adjoints using `SciMLSensitivity.jl`, providing both continuous and discrete and available with different AD back-ends. These two approaches are complementery, with the manual adjoints being ideal for high-performance tasks, and serving as a ground truth for benchmarking and testing automatic adjoing methods from `SciMLSensitivity.jl`.
 
-![Figure 1: Overview of the ODINN.jl ecosystem. \label{fig:ecosystem}](figures/odinn_ecosystem_v2.png)
+
+
 
 
 # Statement of need
