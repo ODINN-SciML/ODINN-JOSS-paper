@@ -12,6 +12,7 @@ authors:
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
     corresponding: true
   - name: Facundo Sapienza
+    orcid: 0000-0003-4252-7161
     affiliation: 2
     affiliation: "3, 4"
   - name: Alban Gossard
@@ -25,6 +26,7 @@ authors:
   - name: Bert Wouters
     affiliation: 2
   - name: Fernando Pérez
+    orcid: 0000-0002-1725-9815
     affiliation: 4
 affiliations:
  - name: Univ. Grenoble Alpes, CNRS, IRD, G-INP, Institut des Géosciences de l’Environnement, Grenoble, Franc
