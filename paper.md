@@ -19,6 +19,8 @@ authors:
     affiliation: 1
   - name: Mathieu le Séac'h
     affiliation: 1
+  - name: Lucille Gimenes 
+    affiliation: 1
   - name: Vivek Gajadhar 
     affiliation: 2
   - name: Fabien Maussion
