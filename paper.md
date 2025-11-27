@@ -104,7 +104,12 @@ Its modular architecture, thorough testing, and continuous integration (CI) ensu
 
 # Acknowledgements
 
-We acknowledge the help of Chris Rackauckas for the debugging and discussion of issues related to the SciML Julia ecosystem, Redouane Lguensat for scientific discussions on the first prototype of the model, and Julien le Sommer for scientific discussions around differentiable programming. We thank all the developers of the SciML Julia ecosystem who work in each one of the core libraries used within `ODINN.jl`. JB acknowledges financial support from the Nederlandse Organisatie voor Wetenschappelijk Onderzoek, Stichting voor de Technische Wetenschappen (Vidi grant 016.Vidi.171.063) and a TU Delft Climate Action grant. FS acknowledges funding from the National Science Foundation (EarthCube programme under awards 1928406 and 1928374). AG acknowledges funding from the MIAI cluster and Agence Nationale de la Recherche (ANR) in the context of France 2030 (grant ANR-23-IACL-0006).
+We acknowledge the help of Chris Rackauckas for the debugging and discussion of issues related to the SciML Julia ecosystem, Redouane Lguensat for scientific discussions on the first prototype of the model, and Julien le Sommer for scientific discussions around differentiable programming. 
+We thank all the developers of the SciML Julia ecosystem who work in each one of the core libraries used within `ODINN.jl`. 
+JB acknowledges financial support from the Nederlandse Organisatie voor Wetenschappelijk Onderzoek, Stichting voor de Technische Wetenschappen (Vidi grant 016.Vidi.171.063) and a TU Delft Climate Action grant. 
+FS and CYL were supported by NSF via grant number OPP-2441132 and the Alfred P. Sloan Foundation under grant number FG-2024-21649.
+FS and FP acknowledges funding from the National Science Foundation (EarthCube programme under awards 1928406 and 1928374).
+AG acknowledges funding from the MIAI cluster and Agence Nationale de la Recherche (ANR) in the context of France 2030 (grant ANR-23-IACL-0006).
 
 # References
 
