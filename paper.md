@@ -112,7 +112,7 @@ This implies that `ODINN.jl`, like OGGM, is virtually capable of simulating any 
 
 Additionally, `ODINN.jl` will be soon used as part of a newly funded 4-year project, to simulate past and future glacier changes in several catchments in the Andes and the Alps. These model outputs will then be combined with a hydrological model, to investigate the impacts of glacier retreat on the hydrological regimes and drought mitigation under different climate change scenarios. 
 
-With these two research venues, `ODINN.jl` will be developed and used to pursue both fundamental research on glacier sliding laws, as well as applied research to assess the impact of glacier retreat on freshwater availability and drought mitigation. 
+With these two research venues, `ODINN.jl` will continue to be developed and used to pursue both fundamental research on glacier sliding laws, and applied research to assess the impact of glacier retreat on freshwater availability and drought mitigation. 
 
 # AI usage disclosure
 
