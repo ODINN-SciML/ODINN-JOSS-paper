@@ -88,6 +88,10 @@ Its modular architecture, thorough testing, and continuous integration (CI) ensu
 
 ![Overview of the ODINN.jl ecosystem. \label{fig:ecosystem}](figures/odinn_ecosystem_v4.png)
 
+# State of the field 
+
+The field of large-scale glacier modelling has considerably grown the last decade, with most models being (or becoming) open-source. While global glacier models such as OGGM [@maussion_open_2019], GloGEM [@huss_new_2015] and PyGEM [@rounce_global_2023] target global-scale efficient simulations of past and future glacier changes and sea-level rise contributions, ODINN.jl has a focus on inverse modelling for glacier physical processes and catchment-scale glacio-hydrological simulations. IGM [@jouvet_inversion_2023], with its neural network-driven ice flow emulator approach has some parallelisms to ODINN.jl, but the model's focus has mainly been on speeding up simulations for large-scale or paleo simulations. Alternatively, the new ice sheet model DJuice.jl [@moses_dj4earth_nodate] -- a Julia translation of the well-known ISSM model -- is perhaps the most similar model to ODINN.jl. They both leverage Julia's differentiability capabilities, and aim to exploit them to infer parametrizations and physical processes related to ice flow. Nonetheless, while DJuice.jl is an ice sheet model, ODINN.jl is highly specialized to simulate glaciers (i.e. anything outside Greenland and Antarctica), thanks to its compatibility with OGGM's data preprocessing. 
+
 # Software design
 
 `ODINN.jl` is in fact an ecosystem composed of multiple packages, each one handling a specific task:
