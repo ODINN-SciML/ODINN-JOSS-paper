@@ -35,7 +35,7 @@ authors:
     orcid: 0000-0002-1725-9815
     affiliation: 4
 affiliations:
- - name: Univ. Grenoble Alpes, CNRS, IRD, G-INP, Institut des Géosciences de l’Environnement, Grenoble, Franc
+ - name: Univ. Grenoble Alpes, CNRS, IRD, G-INP, Institut des Géosciences de l’Environnement, Grenoble, France
    index: 1
  - name: Faculty of Civil Engineering and Geosciences, Delft University of Technology, Delft, The Netherlands
    index: 2
